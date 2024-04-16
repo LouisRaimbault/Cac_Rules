@@ -37,7 +37,7 @@ The search for rules will be done in one step (D=1). \
 This step will take a value of 1/1000*(number of rows with Y=1, Y being the target) for the minsup (A=1). \
 This step will build one tree (C=1) \
 For the only one tree, il will take 1000 variables. If this value exceeds the total number of variables, then the maximum number is used \
-The reduction function is GMIR \
+The reduction function is GMIR 
 
 
 ./Cac ../../sample/Mushroom_Cac.txt v0.e-v22.d d=, A=1-300 B=1-5 C=10-1000 D=2 0 L \
