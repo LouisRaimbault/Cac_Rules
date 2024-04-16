@@ -1,15 +1,15 @@
-# SufRec
+# Cac
 
 ## Description 
 
-This page propose one versions of the CAC C++ programs which can be used bu using GCC compiler and the command make.
+This page propose one versions of the Cac C++ programs which can be used bu using GCC compiler and the command make.
 These algorithms were built around the notion of Mining Frequent ItemSets and associations rules. This data analysis method was first introduced by Agrawal et al. 1993 for mining transaction databases.
 More precisely, follow the following articles :
 
 * A Recursive Algorithm for Mining Association Rules.  Springer Nature COMPUTER  SCIENCE,      3, 384 (2022).   https://doi-org.ezproxy.universite-paris-saclay.fr/10.1007/s42979-022-01266-y
 * SufRec, an algorithm for mining association rules: Recursivity and task parallelism.  Expert    Systems with Applications, Volume 236, 121321  (2024).   https://doi.org/10.1016/j.eswa.2023.121321
 * Association rules and decision rules.  Statistical Analysis and Data Mining, Volume 16, Issue5, (2023),  p. 411-435.  https://doi.org/10.1002/sam.11620:
-*  Data Analysis and Characterization with Association Rules.
+* Data Analysis and Characterization with Association Rules.
 
 
 This version allows the realisation of a characterization of variables, defined in the article " Data Analysis and Characterization with Association Rules"
@@ -58,8 +58,8 @@ Cac in src
 
 ./Cac ../../sample/Mushroom_Cac.txt v0.e d=, A=1 B=1 C=1000 D=1 GMIR R Do the characterization of variable "v0.e" with "GMIR" reduction.
 ./Cac ../../sample/Mushroom_Cac.txt v0.e-v22.d d=, A=1 B=1 C=1000 D=1 GMIR R Do the characterization of variable product "v0.e and v22.d" with GMIR reduction.
-./Cac ../../sample/Mushroom_Cac.txt v0.e d=, A=1 B=1 C=1000 D=1 GMIR R pathname Do the characterization of variable "v0.e" with "GMIR" reduction and get export in pathname
-./Cac ../../sample/Mushroom_Cac.txt v0.e d=, A=1 B=1 C=1000 D=1 0 L pathname Do the characterization of variable "v0.e" with the 4 available reductions and get export in pathname.  
+./Cac ../../sample/Mushroom_Cac.txt v0.e d=, A=1 B=1 C=1000 D=1 GMIR R pathname Do the characterization of variable "v0.e" with "GMIR" reduction and get export in ../../sample/filename
+./Cac ../../sample/Mushroom_Cac.txt v0.e d=, A=1 B=1 C=1000 D=1 0 L ../../sample/pathname Do the characterization of variable "v0.e" with the 4 available reductions and get export in pathname.  
 
 ```
 
