@@ -152,7 +152,7 @@ void RDP_Rec_SufRule (info_mining * im)
       sumb += __builtin_popcountl(im->IT->no_Y_selec[n]);
     }
 
-  int hekp = 0;;
+  int hekp = 0;
   if (im->IE->cur_eta != 0)
     {
       hekp = (int)(2*(float)1/(float)im->IE->cur_eta*(float)100000);

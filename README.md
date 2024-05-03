@@ -57,7 +57,7 @@ For more information about the program settings, please read the readme of the s
 Cac in src
 
 ./Cac ../../sample/Mushroom_Cac.txt v0.e d=, A=1 B=1 C=1000 D=1 GMIR R Do the characterization of variable "v0.e" with "GMIR" reduction.
-./Cac ../../sample/Mushroom_Cac.txt v0.e-v22.d d=, A=1 B=1 C=1000 D=1 GMIR R Do the characterization of variable product "v0.e and v22.d" with GMIR reduction.
+./Cac ../../sample/Mushroom_Cac.txt v0.e,v22.d d=, A=1 B=1 C=1000 D=1 GMIR R Do the characterization of variable product "v0.e and v22.d" with GMIR reduction.
 ./Cac ../../sample/Mushroom_Cac.txt v0.e d=, A=1 B=1 C=1000 D=1 GMIR R pathname Do the characterization of variable "v0.e" with "GMIR" reduction and get export in ../../sample/filename
 ./Cac ../../sample/Mushroom_Cac.txt v0.e d=, A=1 B=1 C=1000 D=1 0 L ../../sample/pathname Do the characterization of variable "v0.e" with the 4 available reductions and get export in pathname.  
 

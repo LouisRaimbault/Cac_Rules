@@ -24,7 +24,8 @@ int main (int argc , char ** argv )
   std::string NB_BLOCK_param ((char*)argv[7]);
   std::string type_red ((char*)argv[8]);
   std::string type_tgt_param ((char*)argv[9]);
-  ip->pathexport = (char*)argv[10];
+  ip->pathexport = NULL;
+  if (argc > 10) {ip->pathexport = (char*)argv[10];}
  
   int j = 0; std::string param = "";
   while (NB_BLOCK_param[j] != '=') {j++;} j++;

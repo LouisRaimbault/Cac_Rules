@@ -547,6 +547,7 @@ void set_target_pred (info_mining * im)
 
 void export_result (info_mining * im)
 {
+  if (im->IP->pathexport == NULL) {return;}
   std::ofstream outfile(im->IP->pathexport,std::ios::app);
   if (!(outfile.is_open())) {std::cout << "ERROR FILE \n"; return;}
   int k = 0;
@@ -608,7 +609,7 @@ void export_result (info_mining * im)
 
 void export_IRF (info_mining * im)
 {
-
+  if (im->IP->pathexport == NULL) {return;}
   int tot_qual_var = 0; int tot_binary_var = 0; int k = 0;
   for (int i = 0; i < im->DT_train->nvar;i++) {tot_binary_var = tot_binary_var + im->IRF->binary_var_used[i];}
   for (int i = 0; i < im->IFV->nb_qualvar+1; i++) {tot_qual_var = tot_qual_var + im->IRF->qual_var_used[i];}
@@ -657,6 +658,7 @@ void export_IRF (info_mining * im)
 
 void export_IRF_LL (info_mining * im)
 {
+  if (im->IP->pathexport == NULL) {return;}
   std::string * names_red = new std::string [4];
   names_red[0] = "MDR"; names_red[1] = "MIR";
   names_red[2] = "GMDR"; names_red[3] = "GMIR";

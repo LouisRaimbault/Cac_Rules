@@ -18,7 +18,7 @@ A main difficulty in characterizing association rules is the extraction of the r
 |param|required|note|
 |--------------------|--------|--------|
 |    transaction dataset    |    yes    | The Dataset transaction  | 
-|    target   |    yes    | name of target, add - to make a product variable |  
+|    target   |    yes    | name of target, add , to make a product variable |  
 |    Minsup  "A = "   |    yes    | Integer. The minsup value for each block (in per thousand)  | 
 |    Nb Tree "B = "   |    yes    | Integer. The number of Trees for each block | 
 |    Nb Var Tree "C = "   	  |    yes    | Integer. The number of variables for trees in each block  | 
@@ -46,7 +46,7 @@ The search for rules will be done in two step (D=2). \
 The parameters of the first step are A = 1, B = 1, C = 10 \
 The parameters of the second step are A = 300, B = 5, C = 1000 \
 The rules are then grouped together (duplicates are not taken into account) \
-All reduction function are used (separately)
+All reduction functions are used (separately)
 
 
 ## Information about export files 
