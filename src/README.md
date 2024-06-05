@@ -31,7 +31,7 @@ A main difficulty in characterizing association rules is the extraction of the r
 
 ## Examples 
 
-./Cac ../../sample/Mushroom_Cac.txt v0.e d=, A=1 B=1 C=1000 D=1 GMIR R \
+./Cac ../sample/Mushroom_Cac.txt v0.e d=, A=1 B=1 C=1000 D=1 GMIR R \
 The target is v0.e \
 The search for rules will be done in one step (D=1). \
 This step will take a value of 1/1000*(number of rows with Y=1, Y being the target) for the minsup (A=1). \
@@ -40,7 +40,7 @@ For the only one tree, il will take 1000 variables. If this value exceeds the to
 The reduction function is GMIR 
 
 
-./Cac ../../sample/Mushroom_Cac.txt v0.e-v22.d d=, A=1-300 B=1-5 C=10-1000 D=2 0 L \
+./Cac ../sample/Mushroom_Cac.txt v0.e-v22.d d=, A=1-300 B=1-5 C=10-1000 D=2 0 L \
 The target is the product of v0.e and v22.d (Y = 1 if v0.e = 1 AND v22.d = 1) \
 The search for rules will be done in two step (D=2). \
 The parameters of the first step are A = 1, B = 1, C = 10 \
